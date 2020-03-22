@@ -67,8 +67,7 @@ void loop() {
   // отрисовка
   if (millis() - tmrDraw >= 10) {
     tmrDraw = millis();
-    colorMode = true;
-    mode = false;
+
     if (soundMode) {
       FastLED.clear();
       int thisSound = getSoundLength();
